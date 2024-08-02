@@ -1,0 +1,31 @@
+<div class="home-container">
+  <h1>Welcome to Our Store</h1>
+  <p>Your one-stop shop for all things awesome!</p>
+  <p>Browse our products and add them to your cart.</p>
+
+</div>
+<div *ngIf="(products ?? []).length > 0">
+  <table class="product-table">
+    <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>AvailableQuantity</th>
+    <th>Price</th>
+    <th>Category Name</th>
+    <th>Category Description</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{product.id}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.description}}</td>
+      <td>{{product.availableQuantity}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.categoryName}}</td>
+      <td>{{product.categoryDescription}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="products?.length===0">no data found</div>

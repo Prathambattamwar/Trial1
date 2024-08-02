@@ -1,0 +1,62 @@
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  min-width: 600px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-table thead {
+  background-color: #f4f4f4;
+}
+
+.product-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.product-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.product-table td {
+  color: #333;
+}
+/* src/app/home/home.component.css */
+.home-container {
+  text-align: center;
+  margin: 50px;
+}
+
+.home-container h1 {
+  font-size: 2.5em;
+  color: #4CAF50;
+}
+
+.home-container p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.home-container .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-decoration: none;
+  color: white;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  border: none;
+}
+
+.home-container .btn:hover {
+  background-color: #45a049;
+}
